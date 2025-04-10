@@ -36,7 +36,7 @@ git clone https://github.com/mereka-vpu/libcapi-dev
 ```
 Then<br>
 ```bash
-gcc -fPIC -shared -o libcapi.so libcapi.c -ldl
+make
 ```
 After that you can use as you like!<br>
 start contributing by edit the file!
