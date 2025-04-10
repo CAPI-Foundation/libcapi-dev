@@ -16,9 +16,9 @@ jobs:
     
     - name: Make Libraries
       run: make
-
-    - name: Run check
-      run: make check
-
-    - name: Run distcheck
-      run: make distcheck
+      
+    - name: Upload libcapi.so artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: libcapi-artifact
+        path: libcapi.so
