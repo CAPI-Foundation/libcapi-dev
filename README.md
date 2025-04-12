@@ -53,6 +53,19 @@ sudo make install
 
 This will copy the `libcapi.so` file to `/usr/local/lib` and run `ldconfig` to update the dynamic linker cache.
 
+# Simple Version
+
+First Execute this command
+
+```bash
+sudo add-apt-repository ppa:neoncorp/libcapi
+```
+
+Then after that
+
+```bash
+sudo apt install libcapi
+```
 
 This provides a clear set of instructions for both compiling and installing the library.
 After that you can use as you like!<br>
