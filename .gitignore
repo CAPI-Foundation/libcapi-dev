@@ -1,0 +1,42 @@
+# Object files
+*.o
+*.obj
+
+# Executables
+*.out
+*.exe
+
+# Shared libraries
+*.so
+*.so.*
+
+# Compiled static libraries
+*.a
+
+# Backup files
+*~
+*.bak
+
+# Temporary files
+*.swp
+*.swo
+
+# IDE specific files (example for common IDEs)
+.idea/
+.vscode/
+*.code-workspace
+
+# Generated files
+Makefile
+Makefile.bak
+*.d
+
+# Log files
+*.log
+
+# System files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Debugging
+*.gdb
