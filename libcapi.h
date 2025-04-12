@@ -1,15 +1,14 @@
 #ifndef LIBCAPI_H
 #define LIBCAPI_H
 
-#define MAX_HEADERS 10
+#define MAX_OUTPUT 8192
 
 typedef struct {
-    int status_code;         // Default: 200
-    char headers[MAX_HEADERS][256];
-    int header_count;
-    int force_close;         // 1 = force 204 or disconnect
-} CapiResponse;
+    char output[MAX_OUTPUT];
+    int force_close;
+} CapiResult;
 
-void process_capi_file(const char *filepath, int client_socket, CapiResponse *response);
+CapiResult process_capi_file(const char *filepath);
+void process_line(const char *line, CapiResult *res);
 
 #endif
