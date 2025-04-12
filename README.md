@@ -22,7 +22,7 @@ capi.forceclose();
 
 You can update your "How To Compile" instructions with the `make install` command like this:
 
-```markdown
+
 # How To Compile
 
 *How To Compile*
