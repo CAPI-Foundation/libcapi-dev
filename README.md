@@ -2,23 +2,15 @@
 Hi, I will Share How to use it!<br>
 this code is belongs to .so file, so You can use as you Like<br>
 ```capi
-# Load a module
-capi.loadmod("hello_mod.so");
 
 # Include another script
 incl <shared.capi>;
-
-# Set a header
-header: "X-Test: Hello";
-
-# Override status code
-http.code: 403;
 
 # Execute command
 capi.exec: "/bin/echo Hello from Shell";
 
 # Define and call
-int hi = "capi rocks!";
+int hi= "capi rocks!";
 function testfunc():
 echo: hi;
 funclose;
@@ -28,15 +20,40 @@ testfunc();
 capi.forceclose();
 ```
 
+You can update your "How To Compile" instructions with the `make install` command like this:
+
+```markdown
 # How To Compile
+
 *How To Compile*
-First Type<br>
+
+First, type:
+
 ```bash
 git clone https://github.com/mereka-vpu/libcapi-dev
 ```
-Then<br>
+
+Then, navigate to the directory:
+
+```bash
+cd libcapi-dev
+```
+
+Next, compile the project by running:
+
 ```bash
 make
 ```
+
+Finally, install the shared library to `/usr/local/lib` and update the linker cache:
+
+```bash
+sudo make install
+```
+
+This will copy the `libcapi.so` file to `/usr/local/lib` and run `ldconfig` to update the dynamic linker cache.
+
+
+This provides a clear set of instructions for both compiling and installing the library.
 After that you can use as you like!<br>
 start contributing by edit the file!
